@@ -114,6 +114,7 @@
 |2|서랍|<img src = "./img/서랍.jpg" width = "200">|  
 |3|손전등|<img src = "./img/손전등.jpg" width = "200">|  
 |4|열쇠|<img src = "./img/열쇠.jpg" width = "200">|
+
 <br><br>
 
 # 2.파라미터 뽑아보기
