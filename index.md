@@ -314,7 +314,7 @@
 <img src = "./img/FlowChart.png" width = "700">
 
 ## 03 용어정리
-<img src = "./img/설명." width = "700">
+<img src = "./img/설명.PNG" width = "700">
 
 ## 04 게임작업일정
 <img src = "./img/제작일정.PNG" width = "700">
