@@ -311,10 +311,10 @@
     
 
 ## 02 키보드 이벤트에 대한 흐름도
-<img src = "./img/FlowChart.png" width = "500">
+<img src = "./img/FlowChart.png" width = "700">
 
 ## 03 용어정리
-<img src = "./img/설명.png" width = "500">
+<img src = "./img/설명.png" width = "700">
 
 ## 04 게임작업일정
-<img src = "./img/제작일정.png" width = "500">
+<img src = "./img/제작일정.png" width = "00">
