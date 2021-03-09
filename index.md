@@ -339,5 +339,8 @@
 ## 03 용어정리
 <img src = "./img/설명.PNG" width = "700">
 
-## 04 게임작업일정
-<img src = "./img/제작일정.PNG" width = "700">
+## 04 2020 게임작업일정
+<img src = "./img/제작일정1.PNG" width = "700">
+
+## 05 2021 게임작업일정
+<img src = "./img/제작일정2.PNG" width = "700">
