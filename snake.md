@@ -1,49 +1,49 @@
-## C#을 이용한 Snake게임
-# 메인 코드
+# C#을 이용한 Snake게임
+## 메인 코드
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
+using System;  
+using System.Collections.Generic;  
+using System.Linq;  
+using System.Text;  
+using System.Threading.Tasks;  
+using System.Diagnostics;  
 
-namespace ConsoleApplication17
-{
-    class Program
-    {
-        public static int[,] map = new int[17, 17] {
-        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-        };
-        public static Random rand = new Random();
-        public static Stopwatch timer = new Stopwatch();
-        public static Stopwatch scoretimer = new Stopwatch();
-        public static char keyinfo;
-        public static ConsoleKeyInfo key;
-        public static bool isKeyPressed = false; //아직 필요없음
-        public static int x = 8, y = 8, max = 1;
-        public static int isItemDraw = 0;
-        public static int[] tmpx = new int[224];
-        public static int[] tmpy = new int[224];
-        public static string str;
-        public static long score = 0;
-
+namespace ConsoleApplication17  
+{  
+    class Program  
+    {  
+        public static int[,] map = new int[17, 17] {  
+        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},  
+        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},  
+        };  
+        public static Random rand = new Random();  
+        public static Stopwatch timer = new Stopwatch();  
+        public static Stopwatch scoretimer = new Stopwatch();  
+        public static char keyinfo;  
+        public static ConsoleKeyInfo key;  
+        public static bool isKeyPressed = false; //아직 필요없음  
+        public static int x = 8, y = 8, max = 1;  
+        public static int isItemDraw = 0;  
+        public static int[] tmpx = new int[224];  
+        public static int[] tmpy = new int[224];  
+        public static string str;  
+        public static long score = 0;  
+ 
 
         static void Main(string[] args)
         {
