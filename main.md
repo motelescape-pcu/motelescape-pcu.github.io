@@ -1,1 +1,1 @@
-
+[ShadowMotel](index.md) 
