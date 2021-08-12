@@ -1,2 +1,2 @@
-[ShadowMotel](index.md) 
+[ShadowMotel](index.md)   
 [Snake](snake.md)
