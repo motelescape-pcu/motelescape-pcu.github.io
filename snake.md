@@ -1,5 +1,6 @@
-##C#을 이용한 Snake게임
-#메인 코드
+## C#을 이용한 Snake게임
+# 메인 코드
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
